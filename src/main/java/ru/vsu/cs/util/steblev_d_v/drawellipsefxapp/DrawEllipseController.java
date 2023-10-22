@@ -26,16 +26,12 @@ public class DrawEllipseController {
     private Color color;
     private double x;
     private double y;
-
     @FXML
     AnchorPane anchorPane;
-
-
     @FXML
     public TextField RX;
     @FXML
     public TextField RY;
-
     @FXML
     public Button rXButton;
     @FXML
@@ -46,20 +42,12 @@ public class DrawEllipseController {
     public ColorPicker colorPicker;
     @FXML
     Canvas canvas;
-
     @FXML
     public Button drawButton;
 
 
     @FXML
     private void initialize() {
-
-//
-//        anchorPane.prefWidthProperty().addListener((ov, oldValue, newValue)
-//                -> canvas.setWidth(newValue.doubleValue()));
-//        anchorPane.prefHeightProperty().addListener((ov, oldValue, newValue)
-//                -> canvas.setHeight(newValue.doubleValue()));
-
         rXButton.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent actionEvent) {
@@ -73,7 +61,6 @@ public class DrawEllipseController {
                 }
             }
         });
-
         rYButton.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent actionEvent) {
@@ -88,7 +75,6 @@ public class DrawEllipseController {
 
             }
         });
-
         colorPicker.setOnAction(new EventHandler() {
             @Override
             public void handle(Event event) {

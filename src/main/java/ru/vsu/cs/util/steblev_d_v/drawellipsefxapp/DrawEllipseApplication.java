@@ -18,11 +18,6 @@ public class DrawEllipseApplication extends Application {
         window.setTitle("Draw Ellipse Algorithm");
         window.show();
         window.setResizable(false);
-
-
-
-
-
     }
 
     public static void main(String[] args) {
