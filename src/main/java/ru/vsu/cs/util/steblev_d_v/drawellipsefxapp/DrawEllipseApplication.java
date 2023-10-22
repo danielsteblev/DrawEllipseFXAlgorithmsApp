@@ -1,20 +1,28 @@
 package ru.vsu.cs.util.steblev_d_v.drawellipsefxapp;
 
 import javafx.application.Application;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
 import java.io.IOException;
 
-public class HelloApplication extends Application {
+public class DrawEllipseApplication extends Application {
     @Override
-    public void start(Stage stage) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("hello-view.fxml"));
-        Scene scene = new Scene(fxmlLoader.load(), 320, 240);
-        stage.setTitle("Hello!");
-        stage.setScene(scene);
-        stage.show();
+    public void start(Stage window) throws IOException {
+        Parent root = FXMLLoader.load(DrawEllipseApplication.class.getResource("hello-view.fxml"));
+        window.setScene(new Scene(root, 800, 600));
+        window.setTitle("Draw Ellipse Algorithm");
+        window.show();
+        window.setResizable(false);
+
+
+
+
+
     }
 
     public static void main(String[] args) {
